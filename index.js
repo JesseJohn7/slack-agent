@@ -60,6 +60,6 @@ class SlackAIAgent{
                 log.error('Error processing member_joined_channel  ', error.message)
             }
         })
-
+           this.slack.error(async (error) => log.error('slack error:', error.message))
     } 
 }
