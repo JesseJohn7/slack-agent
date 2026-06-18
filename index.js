@@ -12,7 +12,7 @@ dotenv.config()
 const log = {
     info:(msg,...args) => console.log(`[INFO] ${msg}`,...args),
     error:(msg,...args) => console.log(`[ERROR] ${msg}`,...args),
-    debug:(msg,...args) => Process.env.NODE_ENV === 'development' && console.log(`[DEBUG] ${msg}`,...args),
+    debug:(msg,...args) => process.env.NODE_ENV === 'development' && console.log(`[DEBUG] ${msg}`,...args),
 }
 
 class SlackAIAgent{
