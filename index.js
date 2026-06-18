@@ -19,7 +19,7 @@ class SlackAIAgent{
     constructor(){
         this.app = express()
         this.slack = new App({ 
-        toKen: process.env.SLACK_BOT_TOKEN,
+        token: process.env.SLACK_BOT_TOKEN,
         signingSecret: process.env.SLACK_SIGNING_SECRET,
         socketMode: true,
         appToken: process.env.SLACK_APP_TOKEN,
